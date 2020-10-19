@@ -1,19 +1,17 @@
 # Networking summary
 
-## Layers
+## The TCP/IP model layers
 
-### The TCP/IP model layers
-
-* Application
+### Application
   Sample protocols: HTTP, SSH
   Concepts: URL, passwords
-* Transport
+### Transport
   Sample protocols: UDP, TCP
   Concepts: port numbers, sessions
-* Internet
+### Internet
   Sample protocols: IP
   Concepts: IP addresses, routes
-* Network access
+### Network access
   Sample protocols: ethernet, wifi, DSL
   Concepts: signal strength, access points
 
