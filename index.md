@@ -1,5 +1,5 @@
 # Networking summary
-![Printf and Nc used for a HTTP request](/assets/httpReqWithprintfandnc.jpg)
+![Printf and Nc used for a HTTP request](https://github.com/ReinTPT/networksummary/blob/gh-pages/Assets/httpReqWithprintfandnc.JPG)
 ## The TCP/IP model layers
 
 ### Application
