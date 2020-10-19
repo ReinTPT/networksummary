@@ -1,5 +1,5 @@
 # Networking summary
-
+![Printf and Nc used for a HTTP request](/assets/httpReqWithprintfandnc.jpg)
 ## The TCP/IP model layers
 
 ### Application
