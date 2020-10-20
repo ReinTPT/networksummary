@@ -13,6 +13,8 @@ Private address - Private internal addresses are not routed on the Internet and 
 IPv4 - xxx.xxx.xxx.xxx - consists of 4 octets seprarated by dots. Each octet is 8 bits. The address is composed of the network part and the host part.
 Special addresses - addresses that can't be assigned to hosts. Some of them are used for special applications that use addresses differently. Some of them are reserved for internal private networks. Some of them are for testing or documentation. Example: 224-239 block is used for multicast transmissions.
 
+IPv6 - An IPv6 address is represented as eight groups of four hexadecimal digits, each group representing 16 bits (two octets, a group sometimes also called a hextet). The groups are separated by colons (:). An example of an IPv6 address is: 2001:0db8:85a3:0000:0000:8a2e:0370:7334.
+
 Subnet mask -The subnet mask is used by the TCP/IP protocol to determine whether a host is on the local subnet or on a remote network.
 
 Network interface - A network interface is the point of interconnection between a computer and a private or public network. A network interface is generally a network interface card (NIC), but does not have to have a physical form. Instead, the network interface can be implemented in software. For example, the loopback interface (127.0.0.1 for IPv4 and ::1 for IPv6) is not a physical device but a piece of software simulating a network interface.
