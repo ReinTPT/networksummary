@@ -19,8 +19,11 @@
 
 ## Terms
 **Packet** - a block of data transmitted across a network complete with a sender and recipient address.
+
 **Network media** -  communication channels used to interconnect nodes on a computer network.(cable - wired, wifi - wireless)
+
 **Port number** - A port number is a way to identify a specific process to which an Internet or other network message is to be forwarded when it arrives at a server. Different services use different port numbers for example some well known common ones are HTTP - 80, SMTP - 25, FTP - 20, HTTPS - 443
+
 **Socket** - A socket is one endpoint of a two-way communication link between two programs running on the network.(IP address + port)
 
 
