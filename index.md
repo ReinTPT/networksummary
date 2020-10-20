@@ -2,12 +2,24 @@
 
 ## Addresses
 
+Public address - It is public global addresses that are used in the Internet. A public IP address is an IP address that is used to access the Internet.
+
+Private address - Private internal addresses are not routed on the Internet and no traffic cannot be sent to them from the Internet, they only supposed to work within the local network.Private addresses include IP addresses from the following subnets:
+
+    *Range from 10.0.0.0 to 10.255.255.255 — a 10.0.0.0 network with a 255.0.0.0 or an /8 (8-bit) mask
+    *Range from 172.16.0.0 to 172.31.255.255 — a 172.16.0.0 network with a 255.240.0.0 (or a 12-bit) mask
+    *A 192.168.0.0 to 192.168.255.255 range, which is a 192.168.0.0 network masked by 255.255.0.0 or /16
+
 IPv4 - xxx.xxx.xxx.xxx - consists of 4 octets seprarated by dots. Each octet is 8 bits. The address is composed of the network part and the host part.
 Special addresses - addresses that can't be assigned to hosts. Some of them are used for special applications that use addresses differently. Some of them are reserved for internal private networks. Some of them are for testing or documentation. Example: 224-239 block is used for multicast transmissions.
 
 Subnet mask -The subnet mask is used by the TCP/IP protocol to determine whether a host is on the local subnet or on a remote network.
 
 Network interface - A network interface is the point of interconnection between a computer and a private or public network. A network interface is generally a network interface card (NIC), but does not have to have a physical form. Instead, the network interface can be implemented in software. For example, the loopback interface (127.0.0.1 for IPv4 and ::1 for IPv6) is not a physical device but a piece of software simulating a network interface.
+
+Router - a device to connect different IP networks, also known as a default gateway.
+
+NAT - Network Address Translation is designed for IP address conservation. It enables private IP networks that use unregistered IP addresses to connect to the Internet.
 
 ## DNS
 
@@ -37,7 +49,7 @@ The Domain Name System (DNS) is a hierarchical and decentralized naming system f
 
 
 
-## Terms
+## Some Terms
 
 **Host** - a machine on the internet (computer, server, etc)
 
