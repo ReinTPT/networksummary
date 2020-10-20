@@ -2,7 +2,12 @@
 
 ## Addresses
 
-IPv4 - xxx.xxx.xxx.xxx - consists of 4 octets seprarated by dots. Each octet is 8 bits. 
+IPv4 - xxx.xxx.xxx.xxx - consists of 4 octets seprarated by dots. Each octet is 8 bits. The address is composed of the network part and the host part.
+Special addresses - addresses that can't be assigned to hosts. Some of them are used for special applications that use addresses differently. Some of them are reserved for internal private networks. Some of them are for testing or documentation. Example: 224-239 block is used for multicast transmissions.
+
+Subnet mask -The subnet mask is used by the TCP/IP protocol to determine whether a host is on the local subnet or on a remote network.
+
+Network interface - A network interface is the point of interconnection between a computer and a private or public network. A network interface is generally a network interface card (NIC), but does not have to have a physical form. Instead, the network interface can be implemented in software. For example, the loopback interface (127.0.0.1 for IPv4 and ::1 for IPv6) is not a physical device but a piece of software simulating a network interface.
 
 ## DNS
 
@@ -50,6 +55,7 @@ The Domain Name System (DNS) is a hierarchical and decentralized naming system f
 
 
 ## Commands
+**ip** - The ip command is a Linux net-tool for system and network administrators. IP stands for Internet Protocol and as the name suggests, the tool is used for configuring network interfaces. Example: ip addr show - shows network interfaces
 
 **ping** *x.x.x.x* - command to test whether your computer and send and recieve traffic from a specified address. Response comes from operating system. Modifiers:
 [-cX (X as athe number of times it should send the ping message)]
