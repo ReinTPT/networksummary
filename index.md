@@ -96,6 +96,8 @@ This exchange of three packets is usually called the TCP three-way handshake. In
 
 **Congestion** - Congestion occurs when the number of packets being transmitted through the network approaches the packet handling capacity of the network. TCP protocol has congestion control built into it(will transmit faster if possible or slower when too much traffic on the network).
 
+**Bandwitdh** - Bandwidth describes the maximum data transfer rate of a network or Internet connection.
+
 
 ## Commands
 **ip** - The ip command is a Linux net-tool for system and network administrators. IP stands for Internet Protocol and as the name suggests, the tool is used for configuring network interfaces. Example: ip addr show - shows network interfaces
@@ -118,4 +120,4 @@ This exchange of three packets is usually called the TCP three-way handshake. In
 
 **tcpdump** - Tcpdump is a command line utility that allows you to capture and analyze network traffic going through your system. It is often used to help troubleshoot network issues, as well as a security tool. example command: sudo tcpdump -n port 80
 
-**traceroute** *hostname* - used to see identify the route a package takes connecting to a server/host.
+**traceroute** *hostname* - used to see identify the route a package takes connecting to a server/host. Uses TTL to reconstrcut the path between routers.
