@@ -117,3 +117,5 @@ This exchange of three packets is usually called the TCP three-way handshake. In
 **dig** *hostname* - command to get info from a DNS server that is more technical than the **host** command.
 
 **tcpdump** - Tcpdump is a command line utility that allows you to capture and analyze network traffic going through your system. It is often used to help troubleshoot network issues, as well as a security tool. example command: sudo tcpdump -n port 80
+
+**traceroute** *hostname* - used to see identify the route a package takes connecting to a server/host.
