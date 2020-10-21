@@ -87,4 +87,4 @@ The Domain Name System (DNS) is a hierarchical and decentralized naming system f
 
 **dig** *hostname* - command to get info from a DNS server that is more technical than the **host** command.
 
-**tcpdump** - Tcpdump is a command line utility that allows you to capture and analyze network traffic going through your system. It is often used to help troubleshoot network issues, as well as a security tool.
+**tcpdump** - Tcpdump is a command line utility that allows you to capture and analyze network traffic going through your system. It is often used to help troubleshoot network issues, as well as a security tool. example command: sudo tcpdump -n port 80
