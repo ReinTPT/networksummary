@@ -29,6 +29,33 @@ The Domain Name System (DNS) is a hierarchical and decentralized naming system f
 
 ## The TCP/IP model layers
 
+UDP - The User Datagram Protocol, or UDP, is a communication protocol used across the Internet for especially time-sensitive transmissions such as video playback or DNS lookups. It speeds up communications by not formally establishing a connection before data is transferred. This allows data to be transferred very quickly, but it can also cause packets to become lost in transit.
+
+TCP - TCP is a connection-oriented protocol, which means a connection is established and maintained until the application programs at each end have finished exchanging messages. TCP is used for organizing data in a way that ensures the secure transmission between the server and client. It guarantees the integrity of data sent over the network, regardless of the amount. For this reason, it is used to transmit data from other higher-level protocols that require all transmitted data to arrive
+
+The original TCP packet format has six flags. Two more optional flags have since been standardized, but they are much less important to the basic functioning of TCP. For each packet, tcpdump will show you which flags are set on that packet.
+
+    SYN (synchronize) [S] — This packet is opening a new TCP session and contains a new initial sequence number.
+    FIN (finish) [F] — This packet is used to close a TCP session normally. The sender is saying that they are finished sending, but they can still receive data from the other endpoint.
+    PSH (push) [P] — This packet is the end of a chunk of application data, such as an HTTP request.
+    RST (reset) [R] — This packet is a TCP error message; the sender has a problem and wants to reset (abandon) the session.
+    ACK (acknowledge) [.] — This packet acknowledges that its sender has received data from the other endpoint. Almost every packet except the first SYN will have the ACK flag set.
+    URG (urgent) [U] — This packet contains data that needs to be delivered to the application out-of-order. Not used in HTTP or most other current applications.
+
+### Three-way handshake
+
+The first packet sent to initiate a TCP session always has the SYN flag set. This initial SYN packet is what a client sends to a server to start opening a TCP connection. This is the first packet you see in the sample tcpdump data, with Flags [S]. This packet also contains a new, randomized sequence number (seq in tcpdump output).
+
+If the server accepts the connection, it sends a packet back that has the SYN and ACK flags, and acknowledges the initial SYN. This is the second packet in the sample data, with Flags [S.]. This contains a different initial sequence number.
+
+(If the server doesn't want to accept the connection, it may not send anything at all. Or it may send a packet with the RST flag.)
+
+Finally, the client acknowledges receiving the SYN|ACK packet by sending an ACK packet of its own.
+
+This exchange of three packets is usually called the TCP three-way handshake. In addition to sequence numbers, the two endpoints also exchange other information used to set up the connection.
+
+
+
 ### Application
 
   Sample protocols: HTTP, SSH
@@ -66,6 +93,8 @@ The Domain Name System (DNS) is a hierarchical and decentralized naming system f
 **DNS** - Domain Name System, worldwide distributed directory of network information. Used to map ip addresses to domain names. There are many different types of DNS records for example: CNAME - Canonical Name record which maps an alias name to a true domain name example: company.hostname.com (alias) -> hostname.com (true domain) , A - type A address(IPv4) , AAAA - quad-A type address(IPv6)  , NS - NS stands for 'nameserver,' and the nameserver record indicates which DNS server is authoritative for that domain (i.e. which server contains the actual DNS records)
 
 **SSL** - Secure socket layer - encrypts the data sent between the host so the traffic couldn't be read in between.
+
+**Congestion** - Congestion occurs when the number of packets being transmitted through the network approaches the packet handling capacity of the network. TCP protocol has congestion control built into it(will transmit faster if possible or slower when too much traffic on the network).
 
 
 ## Commands
