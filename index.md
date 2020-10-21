@@ -98,6 +98,10 @@ This exchange of three packets is usually called the TCP three-way handshake. In
 
 **Bandwitdh** - Bandwidth describes the maximum data transfer rate of a network or Internet connection.
 
+**Firewall** - Firewalls are devices that network operators can use to filter traffic that's coming into or leaving their network.
+
+**Middlebox** - devices that inspect, modify, or filter network traffic.
+
 
 ## Commands
 **ip** - The ip command is a Linux net-tool for system and network administrators. IP stands for Internet Protocol and as the name suggests, the tool is used for configuring network interfaces. Example: ip addr show - shows network interfaces
